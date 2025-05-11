@@ -6,7 +6,7 @@
 #    By: jyoo <jyoo@student.42gyeongsan.kr>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/11 22:58:46 by jyoo              #+#    #+#              #
-#    Updated: 2025/05/11 20:58:38 by jyoo             ###   ########.fr        #
+#    Updated: 2025/05/12 01:03:04 by jyoo             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,8 +20,9 @@ INCLUDES	:= -Iincludes -I$(LIBFT_DIR)
 
 SRC_DIRS	:= src
 
-SRCS		:= algo.c make_order.c ps_func.c push_swap.c sort_func_r.c \
-			sort_func_rr.c sort_func_s.c sort_func_pa.c sort_func_pb.c
+SRCS		:= algo.c algo3.c algo5.c make_order.c ps_func.c push_swap.c \
+			sort_func_r.c sort_func_rr.c sort_func_s.c sort_func_pa.c \
+			sort_func_pb.c
 
 OBJ_DIR	:= obj
 OBJS := $(addprefix $(OBJ_DIR)/,$(SRCS:%.c=%.o))

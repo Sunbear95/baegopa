@@ -6,7 +6,7 @@
 /*   By: jyoo <jyoo@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/24 16:40:40 by jyoo              #+#    #+#             */
-/*   Updated: 2025/05/11 22:23:05 by jyoo             ###   ########.fr       */
+/*   Updated: 2025/05/12 01:53:47 by jyoo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -114,6 +114,7 @@ int	main(int argc, char *argv[])
 	arr = ft_parsing(argv);
 	if (!make_st(arr, ps_strlen(arr), &stack))
 		start_algo(&stack);
+	free(arr);
 	free_all(&stack);
 	return (0);
 }
