@@ -28,9 +28,6 @@ OBJS := $(addprefix $(OBJ_DIR)/,$(SRCS:%.c=%.o))
 
 vpath %.c $(SRC_DIRS)
 
-debug: CFLAGS += -g
-debug: re
-
 NAME = push_swap
 
 all: $(NAME)
